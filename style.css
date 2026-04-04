@@ -340,8 +340,14 @@ a:hover { color: #1d4ed8; }
 
 .edu-date {
   font-family: var(--mono);
-  font-size: 0.76rem;
-  color: var(--ink-4);
+  font-size: 0.72rem;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid #dbe3ff;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
