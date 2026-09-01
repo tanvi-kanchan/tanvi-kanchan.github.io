@@ -1,413 +1,996 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-default-mode="light" data-mode="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tanvi Kanchan - Cloud Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e9edf5">
+<title>Tanvi Kanchan — Software &amp; Cloud Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="wrap">
+  <main id="board" aria-label="Portfolio">
 
-  <!-- ═══ Navbar ═══ -->
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <span class="navbar-logo"><span class="sym">⬢</span> tanvi.eng</span>
-      <ul class="navbar-links">
-        <li><a href="#manifesto">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-				<li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-				<li><a href="#stack">Tech Stack</a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- 01 · PROFILE -->
+<section class="tile" id="t-profile" aria-label="Profile">
+  <div class="t-in">
+    <button
+      class="t-head"
+      aria-expanded="false"
+      aria-controls="t-profile"
+    >
+      <span class="t-num">01</span>
+      <span class="t-title">Profile</span>
 
-  <!-- ═══ Hero / Header ═══ -->
-  <header class="hero wrap">
-    <img src="images/dp.PNG" alt="Tanvi Kanchan" class="hero-photo" />
-    <h1>Tanvi Kanchan</h1>
-    <p class="hero-tagline">:: Cloud &amp; Software Engineer · Infrastructure Builder · Systems Thinker ::</p>
-    </div>
+      <span class="t-aff" aria-hidden="true">
+        <svg width="9" height="9" viewBox="0 0 10 10">
+          <path
+            d="M5 .5v9M.5 5h9"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.2"
+          />
+        </svg>
+      </span>
+    </button>
 
-    <div class="hero-cta">
-      <a href="https://drive.google.com/file/d/1AjpJnCDz9FQXJ9yCjE-beEOThccqr6p4/view?usp=sharing" target="_blank" class="btn btn-primary">View Resume ↗</a>
-      <a href="https://www.linkedin.com/in/tanvi-uday-kanchan/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
-      <a href="https://github.com/tanvi-kanchan" target="_blank" class="btn btn-ghost">GitHub ↗</a>
-    </div>
-  </header>
+    <div class="t-zone">
 
-  <!-- ═══ Manifesto (About) ═══ -->
-  <section id="manifesto" class="section">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-label">⬢ Manifesto</span>
-        <hr class="sec-rule" />
-      </div>
-
-      <!-- Blockquote -->
-      <div class="manifesto-quote">
-        <p>"Build infrastructure that is observable, scalable, and repeatable, then automate everything else."</p>
-      </div>
-
-    <p class="manifesto-body">
-      Cloud and software engineer pursuing a Master's at the <strong>University of Maryland, College Park</strong>,
-      with hands-on experience across <strong>AWS infrastructure</strong>, <strong>Kubernetes platforms</strong>, backend APIs,
-      and automation. Skilled in building cloud-native systems using <strong>Docker</strong>, <strong>EKS</strong>,
-      <strong>Terraform</strong>, <strong>CloudFormation</strong>, and <strong>CI/CD pipelines</strong>, with additional experience in
-      <strong>Databricks</strong>, <strong>PySpark</strong>, and <strong>Delta Lake</strong> for scalable analytics. Strong foundation in
-      Linux, distributed systems, observability, and production support with a focus on secure,
-      reliable, and scalable engineering solutions.
-    </p>
-    </div>
-  </section>
-
-  <!-- ═══ Experience Archive ═══ -->
-  <section id="experience" class="section">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-label">⬢ Experience</span>
-        <hr class="sec-rule" />
-      </div>
-
-      <!-- Log entry 1 -->
-      <div class="log-entry">
-        <div class="log-stamp">
-          <span class="log-date">[Jun 2023 – Jul 2024]</span>
-          <span class="log-dot"></span>
+      <!-- Compact profile shown on the main portfolio page -->
+      <div class="t-preview id-prev">
+        <div class="id-photo">
+          <img
+            src="images/dp.png"
+            alt="Portrait of Tanvi Kanchan"
+            draggable="false"
+          >
         </div>
-        <div class="log-body">
-          <div class="log-title">Cloud Engineer</div>
-          <div class="log-org">Newfold Digital · Mumbai, India</div>
-          <div class="log-scope">:: AWS · Linux · Automation · Production Support</div>
-          <ul>
-            <li>Supported cloud infrastructure operations for Linux-based production environments, resolving <strong>7,000+ technical issues</strong> across application, web, email, and backend service layers with <em>4.84/5 CSAT</em> and <em>91.9% first-contact resolution</em>.</li>
-            <li>Automated infrastructure monitoring, health checks, and recurring workflows using <strong>Bash</strong> and <strong>Python</strong>, reducing reactive incident volume by <em>15%</em>.</li>
-            <li>Supported AWS environments, infrastructure configuration, and deployment validation with exposure to <strong>Terraform</strong>, <strong>CloudFormation</strong>, <strong>Docker</strong>, and <strong>Kubernetes</strong>.</li>
-            <li>Collaborated with engineering teams on release support, incident triage, and log analysis aligned to CI/CD workflows.</li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- Log entry 2 -->
-      <div class="log-entry">
-        <div class="log-stamp">
-          <span class="log-date">[Apr 2022 - May 2023]</span>
-          <span class="log-dot"></span>
-        </div>
-        <div class="log-body">
-          <div class="log-title">Software Engineer Intern</div>
-          <div class="log-org">Autumn Tech Labs · Mumbai, India</div>
-          <div class="log-scope">:: Python · MySQL · REST APIs · Backend Services</div>
-          <ul>
-            <li>Developed backend features, RESTful APIs, and service-layer logic in <strong>Python</strong>, improving inventory processing efficiency by <em>25%</em>.</li>
-            <li>Debugged application and environment issues with developers to improve deployment stability and reduce recurring defects.</li>
-            <li>Worked on <strong>MySQL</strong> schema design, query tuning, and data integration workflows to strengthen data consistency.</li>
-            <li>Assisted with testing, API integration, and cloud-supported deployments for scalable backend services.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+        <h1 class="id-name">Tanvi Kanchan</h1>
 
-  <!-- ═══ Education ═══ -->
-  <section id="education" class="section">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-label">⬢ Education</span>
-        <hr class="sec-rule" />
-      </div>
-
-      <!-- UMD -->
-      <div class="edu-card">
-        <div class="edu-icon">🎓</div>
-        <div class="edu-body">
-          <div class="edu-top">
-            <span class="edu-school">University of Maryland, College Park</span>
-            <span class="edu-date">GPA 3.88 / 4.0</span>
-          </div>
-          <div class="edu-degree">Master of Engineering - <strong>Cloud Engineering</strong></div>
-          <div class="edu-meta">College Park, MD</div>
-          <div class="edu-focus-label">:: Core Focus</div>
-          <div class="edu-focus">Cloud Computing · Cloud Security · Linux System Administration · Networks &amp; Protocols · Data Storage &amp; Databases</div>
-        </div>
-      </div>
-
-      <!-- Mumbai -->
-      <div class="edu-card">
-        <div class="edu-icon">🎓</div>
-        <div class="edu-body">
-          <div class="edu-top">
-            <span class="edu-school">University of Mumbai - Atharva College of Engineering</span>
-            <span class="edu-date">GPA 9.42 / 10.0</span>
-          </div>
-          <div class="edu-degree">Bachelor of Engineering - <strong>Electronics &amp; Telecommunication</strong></div>
-          <div class="edu-meta">Mumbai, India</div>
-          <div class="edu-focus-label">:: Core Focus</div>
-          <div class="edu-focus">Computer Communication Networks · Database Management · Linux Networking &amp; Server Configuration</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-	<!-- ═══ Project Showcase ═══ -->
-  <section id="projects" class="section">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-label">⬢ Project Showcase</span>
-        <hr class="sec-rule" />
-      </div>
-
-      <!-- Project 4 -->
-      <div class="proj-card">
-        <div class="proj-top">
-          <span class="proj-name">E‑Commerce Microservices Platform on AWS EKS</span>
-          <!-- <span class="proj-date">[Jan 2025 - Mar 2025]</span> -->
-        </div>
-        <div class="proj-stack">
-          <strong>Stack ::</strong> AWS · EKS · CloudFormation · Kubernetes · ALB · IRSA · GitHub Actions · Lambda
-        </div>
-        <p class="proj-desc">
-          Provisioned a <strong>private AWS EKS</strong> foundation via <strong>CloudFormation</strong>,
-          including VPC, subnets, route tables, NAT gateway, node groups, IAM roles, and ECR repositories.
-          Deployed the <strong>AWS Load Balancer Controller</strong> with <strong>IRSA</strong> and
-          <strong>ALB‑based Ingress</strong> for secure path‑based routing across six microservices.
-          Integrated <strong>Metrics Server</strong>, <strong>Cluster Autoscaler</strong>, and the
-          <strong>EBS CSI Driver</strong> to enable autoscaling, persistent volumes, and resilient scheduling.
+        <p class="id-tagline">
+          Software &amp; Cloud Engineer · Backend &amp; APIs ·
+          Infrastructure Automation
         </p>
-        <div class="proj-win">
-          <span class="proj-win-icon">◈</span>
-          <div class="proj-win-body">
-            <div class="proj-win-label">Key Engineering Win</div>
-            Enabled secure CI/CD with <strong>GitHub Actions</strong> and a self‑hosted bastion runner, plus a
-            serverless notification workflow using <strong>Step Functions</strong>, <strong>SES</strong>,
-            <strong>API Gateway</strong>, and <strong>S3</strong> for automated email reminders.
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 6 -->
-      <div class="proj-card">
-        <div class="proj-top">
-          <span class="proj-name">Customer Behavior Analytics Platform</span>
-          <!-- <span class="proj-date">[Feb 2025 - Mar 2025]</span> -->
-        </div>
-        <div class="proj-stack">
-          <strong>Stack ::</strong> Python · PySpark · Databricks · Databricks SQL · Delta Lake · ETL
-        </div>
-        <p class="proj-desc">
-          Built a customer behavior analytics platform using <strong>Python</strong>, <strong>PySpark</strong>, and
-          <strong>Databricks</strong> to process user activity logs, transaction events, and application data for
-          large-scale analytics. Developed ETL pipelines and transformation workflows to clean, aggregate,
-          and enrich raw datasets, enabling trend analysis and operational reporting.
+        <blockquote class="id-quote">
+          &ldquo;Build infrastructure that is observable, scalable, and
+          repeatable, then automate everything else.&rdquo;
+        </blockquote>
+
+        <p class="id-bio">
+          Software and cloud engineer experienced in backend development,
+          REST APIs, cloud infrastructure, automation, and production
+          support. Skilled in Python, AWS, GCP, Azure, Docker, Kubernetes,
+          Terraform, and CI/CD, with a focus on building scalable, secure,
+          observable, and reliable systems.
         </p>
-        <div class="proj-win">
-          <span class="proj-win-icon">◈</span>
-          <div class="proj-win-body">
-            <div class="proj-win-label">Key Engineering Win</div>
-            Stored curated data in <strong>Delta Lake</strong> and queried it with <strong>Databricks SQL</strong>, enabling
-            ACID-compliant analytics with schema enforcement and performant cloud-scale queries.
-          </div>
+
+        <div class="id-actions">
+          <a
+            class="btn"
+            href="mailto:tanvik14@terpmail.umd.edu"
+          >
+            Email
+            <svg
+              class="ic"
+              width="9"
+              height="9"
+              viewBox="0 0 10 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 8 8 2M3.2 2H8v4.8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="btn"
+            href="https://drive.google.com/file/d/1AjpJnCDz9FQXJ9yCjE-beEOThccqr6p4/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+          >
+            Resume
+            <svg
+              class="ic"
+              width="9"
+              height="9"
+              viewBox="0 0 10 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 8 8 2M3.2 2H8v4.8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/tanvi-uday-kanchan/"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+            <svg
+              class="ic"
+              width="9"
+              height="9"
+              viewBox="0 0 10 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 8 8 2M3.2 2H8v4.8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="btn"
+            href="https://github.com/tanvi-kanchan"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub
+            <svg
+              class="ic"
+              width="9"
+              height="9"
+              viewBox="0 0 10 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 8 8 2M3.2 2H8v4.8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+              />
+            </svg>
+          </a>
         </div>
       </div>
 
-      <!-- Project 5 -->
-      <div class="proj-card">
-        <div class="proj-top">
-          <span class="proj-name">Predictive Infrastructure Auto‑Scaler</span>
-          <!-- <span class="proj-date">[Mar 2025 - Apr 2025]</span> -->
-        </div>
-        <div class="proj-stack">
-          <strong>Stack ::</strong> AWS EKS · CloudWatch · Amazon RDS MySQL · Docker · Kubernetes · Prophet
-        </div>
-        <p class="proj-desc">
-          Engineered a predictive auto‑scaling service deployed as a highly available
-          <strong>Dockerized workload</strong> on <strong>AWS EKS</strong>, interfacing with the Kubernetes API
-          to provision capacity ahead of demand spikes. Built a time‑series forecasting pipeline using
-          the <strong>Prophet</strong> model trained on historical CPU, memory, and request metrics to drive
-          intelligent scaling decisions. Integrated <strong>RDS MySQL</strong> for metric storage and
-          <strong>CloudWatch</strong> for real‑time telemetry to compare predicted vs. actual behavior.
-        </p>
-        <div class="proj-win">
-          <span class="proj-win-icon">◈</span>
-          <div class="proj-win-body">
-            <div class="proj-win-label">Key Engineering Win</div>
-            Achieved <strong>zero‑downtime scale‑outs</strong> by forecasting demand trends and automating
-            proactive capacity provisioning, improving resource efficiency without sacrificing reliability.
-          </div>
-        </div>
-      </div>
+      <!-- Detailed profile shown after the Profile card is expanded -->
+      <div class="t-full">
+        <div class="fw">
+          <div class="id-full">
 
-      <!-- Project 1 -->
-      <div class="proj-card">
-        <div class="proj-top">
-          <span class="proj-name">Serverless Reminder Notification System</span>
-          <!-- <span class="proj-date">[Dec 2024 - Jan 2025]</span> -->
-        </div>
-        <div class="proj-stack">
-          <strong>Stack ::</strong> AWS Step Functions · SES · API Gateway · S3 · Lambda
-        </div>
-        <p class="proj-desc">
-          Architected an <strong>AWS Step Functions</strong> state machine orchestrating
-          <strong>Lambda</strong> for business logic, <strong>SES</strong> for email delivery,
-          and <strong>API Gateway</strong> for secure REST endpoints. Leveraged <strong>S3</strong>
-          for workflow state persistence in a fully event‑driven, zero‑server architecture.
-        </p>
-        <div class="proj-win">
-          <span class="proj-win-icon">◈</span>
-          <div class="proj-win-body">
-            <div class="proj-win-label">Key Engineering Win</div>
-            Achieved <strong>zero‑server operational overhead</strong> with <em>automatic horizontal scaling</em> - delivering scheduled email notifications at scale while keeping costs proportional to usage.
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="proj-card">
-        <div class="proj-top">
-          <span class="proj-name">PPA for Log Monitoring on Linux Server</span>
-          <!-- <span class="proj-date">[Sep 2024 - Dec 2024]</span> -->
-        </div>
-        <div class="proj-stack">
-          <strong>Stack ::</strong> Linux · Python · Graylog · Ansible
-        </div>
-        <p class="proj-desc">
-          Developed a <strong>Personal Package Archive</strong> distributing a custom
-          log‑collection service, deployed at scale via <strong>Ansible</strong> playbooks.
-          Logs are forwarded to <strong>Graylog</strong> for real‑time analysis, advanced search,
-          and configurable alerting - enabling centralized observability across multi‑server environments.
-        </p>
-        <div class="proj-win">
-          <span class="proj-win-icon">◈</span>
-          <div class="proj-win-body">
-            <div class="proj-win-label">Key Engineering Win</div>
-            Eliminated per‑server manual configuration - <strong>Ansible‑driven deployment</strong> enabled <em>one‑command provisioning</em> of log collection across an entire fleet of Linux nodes.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ The Engine Room (Tech Stack) ═══ -->
-  <section id="stack" class="section">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-label">⬢ The Engine Room</span>
-        <hr class="sec-rule" />
-      </div>
-
-      <table class="stack-table">
-        <tr>
-          <th>⬡ Languages</th>
-          <td>
-            <div class="stack-pills">
-              <span class="pill">Python</span>
-              <span class="pill">Python</span>
-              <span class="pill">Bash</span>
-              <span class="pill">PowerShell</span>
-              <span class="pill">SQL</span>
-              <span class="pill">JavaScript</span>
-              <span class="pill">HTML / CSS</span>
+            <div class="idf-photo">
+              <img
+                src="images/dp.png"
+                alt="Portrait of Tanvi Kanchan"
+                draggable="false"
+              >
             </div>
-          </td>
-        </tr>
-        <tr>
-          <th>⬡ Cloud &amp; Infra</th>
-          <td>
-            <div class="stack-pills">
-              <span class="pill">AWS</span>
-              <span class="pill">GCP</span>
-              <span class="pill">Azure</span>
-              <span class="pill">EC2</span>
-              <span class="pill">Auto Scaling</span>
-              <span class="pill">ALB</span>
-              <span class="pill">RDS</span>
-              <span class="pill">CloudWatch</span>
-              <span class="pill">CloudFront</span>
-              <span class="pill">S3</span>
-              <span class="pill">IAM</span>
-              <span class="pill">VPC</span>
-              <span class="pill">WAF</span>
-              <span class="pill">EKS</span>
-              <span class="pill">ECR</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <th>⬡ DevOps</th>
-          <td>
-            <div class="stack-pills">
-              <span class="pill">Docker</span>
-              <span class="pill">Kubernetes</span>
-              <span class="pill">Helm</span>
-              <span class="pill">GitHub Actions</span>
-              <span class="pill">GitLab CI</span>
-              <span class="pill">Jenkins</span>
-              <span class="pill">Terraform</span>
-              <span class="pill">Ansible</span>
-              <span class="pill">CloudFormation</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <th>⬡ Observability</th>
-          <td>
-            <div class="stack-pills">
-              <span class="pill">Prometheus</span>
-              <span class="pill">Grafana</span>
-              <span class="pill">ELK Stack</span>
-              <span class="pill">Graylog</span>
-              <span class="pill">CloudWatch</span>
-              <span class="pill">CloudTrail</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <th>⬡ Data &amp; Tools</th>
-          <td>
-            <div class="stack-pills">
-              <span class="pill">PostgreSQL</span>
-              <span class="pill">MySQL</span>
-              <span class="pill">Databricks</span>
-              <span class="pill">Delta Lake</span>
-              <span class="pill">Kafka</span>
-              <span class="pill">Git</span>
-              <span class="pill">VS Code</span>
-              <span class="pill">pgAdmin 4</span>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </section>
 
-  <!-- ═══ Publication ═══ -->
-  <section id="publication" class="section">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="sec-label">⬢ Publication</span>
-        <hr class="sec-rule" />
-      </div>
-      <div class="pub-block">
-        <p>
-          Tanvi Kanchan, Jagtap Shripad, Avishkar Dige, Satyam Palkar, and Kavita Bani.
-          <em>"Exploring the Efficiency and Effectiveness of an Automated Robotic Vacuum Cleaner."</em>
-        </p>
-        <p class="pub-issn">ISSN 0970‑2555 · Volume 52, Issue 2, No. 1 · February 2023</p>
-      </div>
-    </div>
-  </section>
+            <div>
+              <div class="idf-name">Tanvi Kanchan</div>
 
-  <!-- ═══ Footer ═══ -->
+              <p class="idf-tagline">
+                Software &amp; Cloud Engineer · Backend &amp; APIs ·
+                Infrastructure Automation
+              </p>
+
+              <blockquote class="idf-quote">
+                &ldquo;Build infrastructure that is observable, scalable,
+                and repeatable, then automate everything else.&rdquo;
+              </blockquote>
+
+              <p class="idf-bio">
+                Software and cloud engineer with experience in backend
+                development, REST APIs, cloud-native applications,
+                infrastructure automation, and production support across
+                Linux, Windows, and macOS environments. Skilled in Python,
+                Bash, SQL, Node.js, AWS, GCP, Azure, Docker, Kubernetes, EKS,
+                Lambda, RDS, CloudFormation, Terraform, Ansible, and GitHub
+                Actions, with hands-on experience in CI/CD automation,
+                monitoring, incident triage, log analysis, root-cause
+                analysis, and observability using OpenTelemetry, Prometheus,
+                Grafana, and CloudWatch. Seeking to apply these software
+                engineering, cloud infrastructure, and automation skills to
+                build scalable, secure, and reliable systems that support
+                organizational growth and operational efficiency.
+              </p>
+
+              <div class="cl">
+                <a href="mailto:tanvik14@terpmail.umd.edu">
+                  <span class="k">Email</span>
+                  <span class="v">tanvik14@terpmail.umd.edu</span>
+                  <svg
+                    class="ic"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 8 8 2M3.2 2H8v4.8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                </a>
+
+                <a href="tel:+12404629363">
+                  <span class="k">Phone</span>
+                  <span class="v">+12404629363</span>
+                  <svg
+                    class="ic"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 8 8 2M3.2 2H8v4.8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://tanvi-kanchan.github.io"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="k">Website</span>
+                  <span class="v">tanvi-kanchan.github.io</span>
+                  <svg
+                    class="ic"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 8 8 2M3.2 2H8v4.8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://drive.google.com/file/d/1AjpJnCDz9FQXJ9yCjE-beEOThccqr6p4/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="k">Resume</span>
+                  <span class="v">drive.google.com</span>
+                  <svg
+                    class="ic"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 8 8 2M3.2 2H8v4.8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/tanvi-uday-kanchan/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="k">LinkedIn</span>
+                  <span class="v">
+                    linkedin.com/in/tanvi-uday-kanchan
+                  </span>
+                  <svg
+                    class="ic"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 8 8 2M3.2 2H8v4.8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://github.com/tanvi-kanchan"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="k">GitHub</span>
+                  <span class="v">github.com/tanvi-kanchan</span>
+                  <svg
+                    class="ic"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 8 8 2M3.2 2H8v4.8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- 02 · EXPERIENCE -->
+    <section class="tile" id="t-experience" aria-label="Experience">
+      <div class="t-in">
+        <button class="t-head" aria-expanded="false" aria-controls="t-experience">
+          <span class="t-num">02</span><span class="t-title">Experience</span>
+          <span class="t-aff" aria-hidden="true"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M5 .5v9M.5 5h9" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span>
+        </button>
+        <div class="t-zone">
+          <div class="t-preview">
+            <div class="x-grid">
+
+              <!-- Newfold Digital -->
+              <div class="x-item">
+                <div class="x-role">Cloud Developer</div>
+
+                <div class="x-co">
+                  <b>Newfold Digital, Inc.</b> · Mumbai, India
+                </div>
+
+                <div class="x-meta">Jun 2023 – Jul 2024</div>
+
+                <p class="x-desc">
+                  A global web technology company with nearly 5,000 employees,
+                  serving more than 6.7 million customers through domain registration,
+                  web hosting, website builders, and professional services worldwide.
+                </p>
+
+                <ul class="x-blt">
+                  <li>
+                    Managed Linux, Windows &amp; macOS cloud environments across web
+                    apps, REST APIs, and backend services
+                  </li>
+                  <li>
+                    Cut reactive incidents 15% with Python &amp; Bash automation for
+                    monitoring and health checks
+                  </li>
+                </ul>
+
+                <div class="chips">
+                  <span class="chip">AWS</span>
+                  <span class="chip">Linux</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">CI/CD</span>
+                </div>
+              </div>
+
+              <!-- Autumn Tech Labs -->
+              <div class="x-item">
+                <div class="x-role">Junior Software Engineer</div>
+
+                <div class="x-co">
+                  <b>Autumn Tech Labs, Inc.</b> · Mumbai, India
+                </div>
+
+                <div class="x-meta">Apr 2022 – May 2023</div>
+
+                <p class="x-desc">
+                  An early-stage health technology startup developing affordable,
+                  technology-enabled healthcare and electronic products.
+                </p>
+
+                <ul class="x-blt">
+                  <li>
+                    Built Python backend features and RESTful APIs, improving
+                    processing efficiency by 25%
+                  </li>
+                  <li>
+                    Managed MySQL schemas, queries, and data integration workflows
+                    for product operations
+                  </li>
+                </ul>
+
+                <div class="chips">
+                  <span class="chip">Python</span>
+                  <span class="chip">REST APIs</span>
+                  <span class="chip">MySQL</span>
+                  <span class="chip">Backend</span>
+                </div>
+              </div>
+
+          </div>
+
+  <div class="x-stats">
+    <div>
+      <b>15%</b>
+      <span>fewer reactive incidents</span>
+    </div>
+
+    <div>
+      <b>25%</b>
+      <span>processing efficiency gain</span>
+    </div>
+
+    <div>
+      <b>6.7M+</b>
+      <span>customers on supported platform</span>
+    </div>
+  </div>
+</div>
+          <div class="t-full">
+            <div class="fw">
+            <div class="x-full-g">
+              <div class="x-col">
+                <div class="xf-role">Cloud Developer</div>
+                <div class="xf-co">Newfold Digital, Inc.</div>
+                <div class="xf-meta">Mumbai, India · Jun 2023 – Jul 2024</div>
+                <p class="xf-desc">
+                  A global web technology company with nearly 5,000 employees, serving more than 6.7 million customers through domain registration, web hosting, website builders, and professional services worldwide.
+                </p>
+                <div class="chips"><span class="chip">AWS</span><span class="chip">Linux</span><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">CI/CD</span></div>
+                <ul>
+                  <li>Managed Linux, Windows, and macOS-based cloud environments across web applications, REST APIs, and backend services, resolving complex system issues and improving application availability</li>
+                  <li>Created Python and Bash automation for infrastructure monitoring, system health checks, and recurring cloud operations, reducing reactive incidents by 15% and improving platform reliability</li>
+                  <li>Developed diagnostic workflows for distributed applications using log analysis, debugging, and root-cause analysis to identify recurring failures and improve service stability</li>
+                  <li>Contributed to cloud-native releases through CI/CD workflows, deployment validation, and engineering collaboration, improving microservices delivery and production reliability</li>
+                </ul>
+              </div>
+              <div class="x-col">
+                <div class="xf-role">Junior Software Engineer</div>
+                <div class="xf-co">Autumn Tech Labs, Inc.</div>
+                <div class="xf-meta">Mumbai, India · Apr 2022 – May 2023</div>
+                <p class="xf-desc">
+                  An early-stage health technology startup developing affordable, technology-enabled healthcare and electronic products.
+                </p>
+                <div class="chips"><span class="chip">Python</span><span class="chip">REST APIs</span><span class="chip">MySQL</span><span class="chip">Backend Services</span></div>
+                <ul>
+                  <li>Developed Python backend features, RESTful APIs, and service-layer components for product and operational workflows, improving processing efficiency by 25% through modular development and optimized request handling</li>
+                  <li>Managed MySQL schemas, queries, and data integration workflows supporting product development and business operations, improving application performance and data consistency</li>
+                  <li>Collaborated with founders, developers, and business stakeholders to translate product requirements and growth objectives into scoped features, demonstrations, and release plans</li>
+                  <li>Contributed to feature development, testing, API integrations, debugging, and deployments, resolving recurring defects and improving backend reliability and release stability</li>
+                </ul>
+              </div>
+            </div>
+            <div class="xf-stats">
+              <div><b>15%</b><span>Reduction in reactive incidents</span></div>
+              <div><b>25%</b><span>Processing efficiency gain</span></div>
+              <div><b>6.7M+</b><span>Customers on supported platform</span></div>
+              <div><b>3</b><span>OS environments · Linux / Windows / macOS</span></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · PROJECTS -->
+    <section class="tile" id="t-projects" aria-label="Projects">
+      <div class="t-in">
+        <button class="t-head" aria-expanded="false" aria-controls="t-projects">
+          <span class="t-num">03</span><span class="t-title">Projects</span>
+          <span class="t-aff" aria-hidden="true"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M5 .5v9M.5 5h9" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span>
+        </button>
+        <div class="t-zone">
+          <div class="t-preview">
+            <div class="p-list">
+              <div class="p-row"><span class="p-i">01</span><span><span class="p-n">Cloud-Native E-Commerce Microservices Platform</span><div class="p-sub">AWS · EKS · Python · Lambda · GitHub Actions</div></span></div>
+              <div class="p-row"><span class="p-i">02</span><span><span class="p-n">Predictive Infrastructure Auto-Scaler</span><div class="p-sub">AWS EKS · CloudWatch · RDS MySQL · Prophet</div></span></div>
+              <div class="p-row"><span class="p-i">03</span><span><span class="p-n">Healthcare Electronics Inventory &amp; Order Management</span><div class="p-sub">Python · REST APIs · MySQL</div></span></div>
+              <div class="p-row"><span class="p-i">04</span><span><span class="p-n">Personal Package Archive for Log Monitoring on Linux Server</span><span class="p-sub">Linux · Python · Graylog · Ansible </span></span></div>
+              <div class="p-row"><span class="p-i">05</span><span><span class="p-n">Customer Behavior Analytics Platform</span><span class="p-sub">Python · PySpark · Databricks · Delta Lake · ETL</span></span></div>
+              <div class="p-row"><span class="p-i">06</span><span><span class="p-n">Arduino-Based Line Following Robot</span><span class="p-sub">Arduino · IR Sensors · Embedded C</span></span></div>
+              <div class="p-row"><span class="p-i">07</span><span><span class="p-n">Automatic Robotic Vacuum Cleaner</span><span class="p-sub">Brushless DC Motor · Li-Ion Battery · Autonomous Navigation</span></span></div>
+            </div>
+          </div>
+          <div class="t-full">
+            <div class="fw">
+            <div class="pj-cols">
+              <article class="pj">
+                <div class="pj-h"><span class="pj-i">01</span><h3 class="pj-n">Cloud-Native E-Commerce Microservices Platform</h3></div>
+                <div class="chips"><span class="chip">AWS</span><span class="chip">Python</span><span class="chip">EKS</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">ECR</span><span class="chip">CloudFormation</span><span class="chip">GitHub Actions</span><span class="chip">Lambda</span></div>
+                <p class="pj-d">Developed and deployed six containerized Python microservices on AWS EKS using REST APIs, Docker, Kubernetes, ECR, and ALB-based routing. Provisioned VPC networking, IAM roles, node groups, load balancers, and ECR repositories through CloudFormation, applying IRSA to secure AWS access and isolate workloads.</p>
+                <div class="pj-win"><span class="k">WIN</span><p>Automated CI/CD with GitHub Actions and configured Kubernetes autoscaling, persistent storage, and workload scheduling. Plus a serverless notification workflow using API Gateway, Lambda, Step Functions, SES, and S3 for secure, automated email delivery.</p></div>
+              </article>
+              <article class="pj">
+                <div class="pj-h"><span class="pj-i">02</span><h3 class="pj-n">Predictive Infrastructure Auto-Scaler</h3></div>
+                <div class="chips"><span class="chip">AWS EKS</span><span class="chip">CloudWatch</span><span class="chip">Amazon RDS MySQL</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Prophet</span></div>
+                <p class="pj-d">Developed a Python-based predictive autoscaling application as a highly available Dockerized workload on AWS EKS, integrating with the Kubernetes API to automate scaling and provision capacity ahead of changing application demand.</p>
+                <div class="pj-win"><span class="k">WIN</span><p>Built a Prophet-based forecasting pipeline on historical CPU, memory, and request metrics, with Amazon RDS MySQL and CloudWatch telemetry powering proactive capacity planning and data-driven scaling decisions.</p></div>
+              </article>
+              <article class="pj">
+                <div class="pj-h"><span class="pj-i">03</span><h3 class="pj-n">Healthcare Electronics Inventory &amp; Order Management System</h3></div>
+                <div class="chips"><span class="chip">Python</span><span class="chip">REST APIs</span><span class="chip">MySQL</span></div>
+                <p class="pj-d">Built a centralized application to manage healthcare electronic devices, inventory levels, and order-processing workflows, developing Python services and REST APIs that improved processing efficiency by 25%.</p>
+                <div class="pj-win"><span class="k">WIN</span><p>Owned the MySQL data model, API integrations, and release testing while working with developers, founders, and funding stakeholders to define product milestones and demonstrate completed features.</p></div>
+              </article>
+              <article class="pj">
+                <div class="pj-h"><span class="pj-i">04</span><h3 class="pj-n">Personal Package Archive for Log Monitoring on Linux Server</h3></div>
+                <div class="chips"><span class="chip">Linux</span><span class="chip">Python</span><span class="chip">Graylog</span><span class="chip">Ansible</span><span class="chip">PPA</span></div>
+                <p class="pj-d">Developed a Linux log-monitoring service packaged through a Personal Package Archive, using Python to capture critical remote-access and authentication events and forward system logs to Graylog for centralized, real-time analysis.</p>
+                <div class="pj-win"><span class="k">WIN</span><p>Implemented Graylog search and alerting workflows for security and operational monitoring, and used Ansible to automate installation and configuration across multiple Linux servers for scalable deployment.</p></div>
+              </article>
+              <article class="pj">
+                <div class="pj-h"><span class="pj-i">05</span><h3 class="pj-n">Customer Behavior Analytics Platform</h3></div>
+                <div class="chips"><span class="chip">Python</span><span class="chip">PySpark</span><span class="chip">Databricks</span><span class="chip">Databricks SQL</span><span class="chip">Delta Lake</span><span class="chip">ETL</span></div>
+                <p class="pj-d">Built a customer behavior analytics platform using Python, PySpark, and Databricks to process user activity logs, transaction events, and application data for large-scale usage analysis, operational reporting, and customer behavior insights.</p>
+                <div class="pj-win"><span class="k">WIN</span><p>Developed ETL and transformation workflows to clean, aggregate, and enrich raw data, storing curated datasets in Delta Lake and querying them with Databricks SQL with support for ACID transactions and schema enforcement.</p></div>
+              </article>
+              <article class="pj">
+                <div class="pj-h"><span class="pj-i">06</span><h3 class="pj-n">Arduino-Based Line Following Robot</h3></div>
+                <div class="chips"><span class="chip">Arduino</span><span class="chip">IR Sensors</span><span class="chip">Embedded C</span><span class="chip">Motor Control</span></div>
+                <p class="pj-d">Developed an autonomous line-following robot using Arduino and IR sensors to detect path boundaries and continuously adjust movement based on real-time sensor input.</p>
+                <div class="pj-win"><span class="k">WIN</span><p>Programmed navigation and motor-control logic in Embedded C, optimizing directional adjustments and movement control to improve path-following accuracy and stability.</p>/div>
+              </article>
+              <article class="pj">
+                <div class="pj-h"><span class="pj-i">07</span><h3 class="pj-n">Automatic Robotic Vacuum Cleaner</h3></div>
+                <div class="chips"><span class="chip">Brushless DC Motor</span><span class="chip">Li-Ion Battery</span><span class="chip">Autonomous Navigation</span><span class="chip">Obstacle Avoidance</span></div>
+                <p class="pj-d">Designed and developed a low-cost autonomous robotic vacuum using a brushless DC motor, gear mechanism, and Li-Ion battery to support compact and energy-efficient cleaning operations.</p>
+                <div class="pj-win"><span class="k">WIN</span><p>Implemented autonomous navigation and obstacle-avoidance logic toimprove movement across indoor environments and optimize cleaning coverage with minimal manual intervention.</p></div>
+              </article>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · EDUCATION -->
+    <section class="tile" id="t-education" aria-label="Education and Publication">
+      <div class="t-in">
+        <button
+          class="t-head"
+          aria-expanded="false"
+          aria-controls="t-education"
+        >
+          <span class="t-num">04</span>
+          <span class="t-title">Education  &amp; Publication</span>
+
+          <span class="t-aff" aria-hidden="true">
+            <svg width="9" height="9" viewBox="0 0 10 10">
+              <path
+                d="M5 .5v9M.5 5h9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+            </svg>
+          </span>
+        </button>
+
+        <div class="t-zone">
+
+          <!-- Compact Education preview -->
+          <div class="t-preview">
+
+            <div class="e-item">
+              <div class="e-deg">
+                Master of Engineering in Cloud Engineering
+              </div>
+
+              <div class="e-sch">
+                University of Maryland, College Park
+              </div>
+
+              <div class="e-meta">
+                College Park, USA · <b>GPA 3.9/4.0</b>
+              </div>
+            </div>
+
+            <div class="e-item">
+              <div class="e-deg">
+                Bachelor of Engineering in Electronics and Telecommunication
+              </div>
+
+              <div class="e-sch">
+                University of Mumbai
+              </div>
+
+              <div class="e-meta">
+                Mumbai, India · <b>GPA 9.42/10</b>
+              </div>
+            </div>
+
+            <div class="e-mini-list">
+              <div class="e-mini-row">
+                <span>Certification</span>
+                <strong>Network Transformation 101</strong>
+              </div>
+
+              <div class="e-mini-row">
+                <span>Publication</span>
+                <strong>
+                  Automated Robotic Vacuum Cleaner
+                </strong>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Expanded Education view -->
+          <div class="t-full">
+            <div class="fw">
+
+              <div class="ef-g">
+
+                <!-- Education and certification -->
+                <div class="ef-col">
+                  <div class="ef-label">Education &amp; Credentials</div>
+
+                  <article class="edu-entry">
+                    <h3 class="edu-degree">
+                      Master of Engineering in Cloud Engineering
+                    </h3>
+
+                    <div class="edu-school">
+                      University of Maryland, College Park
+                    </div>
+
+                    <div class="edu-meta">
+                      College Park, USA · <b>GPA 3.9/4.0</b>
+                    </div>
+                  </article>
+
+                  <article class="edu-entry">
+                    <h3 class="edu-degree">
+                      Bachelor of Engineering in Electronics and Telecommunication
+                    </h3>
+
+                    <div class="edu-school">
+                      University of Mumbai
+                    </div>
+
+                    <div class="edu-meta">
+                      Mumbai, India · <b>GPA 9.42/10</b>
+                    </div>
+                  </article>
+
+                  <article class="edu-entry edu-certification">
+                    <div class="edu-type">Certification</div>
+
+                    <h3 class="edu-degree">
+                      Network Transformation 101
+                    </h3>
+
+                    <div class="edu-school">
+                      Intel Network Academy &amp; Coursera
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Publication -->
+                <div class="ef-col">
+                  <div class="ef-label">Publication</div>
+
+                  <article class="publication-card">
+                    <div class="publication-index">01</div>
+
+                    <h3 class="publication-title">
+                      Exploring the Efficiency and Effectiveness of an Automated
+                      Robotic Vacuum Cleaner
+                    </h3>
+
+                    <p class="publication-authors">
+                      Tanvi Kanchan, Shripad Jagtap, Avishkar Dige, Satyam Palkar,
+                      and Kavita Bani
+                    </p>
+
+                    <div class="publication-details">
+                      <span>ISSN: 0970-2555</span>
+                      <span>Volume 52</span>
+                      <span>Issue 2, No. 1</span>
+                      <span>February 2023</span>
+                    </div>
+                  </article>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- 05 · TECH STACK -->
+    <section class="tile" id="t-stack" aria-label="Tech Stack">
+      <div class="t-in">
+        <button class="t-head" aria-expanded="false" aria-controls="t-stack">
+          <span class="t-num">05</span><span class="t-title">Tech Stack</span>
+          <span class="t-aff" aria-hidden="true"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M5 .5v9M.5 5h9" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span>
+        </button>
+        <div class="t-zone">
+          <div class="t-preview">
+            <div class="s-row"><span class="s-lab">Languages</span><span class="chips s-chips"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">Bash</span><span class="chip">SQL</span><span class="chip">JavaScript</span></span><span class="s-count">8</span></div>
+            <div class="s-row"><span class="s-lab">Backend &amp; Web</span><span class="chips s-chips"><span class="chip">REST APIs</span><span class="chip">Node.js</span><span class="chip">Microservices</span><span class="chip">PostgreSQL</span></span><span class="s-count">6</span></div>
+            <div class="s-row"><span class="s-lab">Cloud Services</span><span class="chips s-chips"><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">Azure</span><span class="chip">EKS</span><span class="chip">Lambda</span><span class="chip">RDS</span></span><span class="s-count">27</span></div>
+            <div class="s-row"><span class="s-lab">Containers &amp; DevOps</span><span class="chips s-chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Terraform</span><span class="chip">GitHub Actions</span></span><span class="s-count">9</span></div>
+            <div class="s-row"><span class="s-lab">Security &amp; Networking</span><span class="chips s-chips"><span class="chip">IAM</span><span class="chip">KMS</span><span class="chip">WAF</span><span class="chip">Checkov</span></span><span class="s-count">11</span></div>
+            <div class="s-row"><span class="s-lab">Software &amp; Tools</span><span class="chips s-chips"><span class="chip">OpenTelemetry</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Databricks</span></span><span class="s-count">10</span></div>
+          </div>
+          <div class="t-full">
+            <div class="fw">
+            <div class="sf">
+              <div class="sf-row"><span class="sf-lab">Languages</span><span class="chips"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">Bash / Shell</span><span class="chip">PowerShell</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span></span></div>
+              <div class="sf-row"><span class="sf-lab">Backend &amp; Web</span><span class="chips"><span class="chip">REST APIs</span><span class="chip">Node.js</span><span class="chip">Microservices</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">Distributed Systems</span></span></div>
+              <div class="sf-row"><span class="sf-lab">Cloud Services</span><span class="chips"><span class="chip">AWS</span><span class="chip">IAM</span><span class="chip">EC2</span><span class="chip">VPC</span><span class="chip">Auto Scaling</span><span class="chip">ALB</span><span class="chip">RDS</span><span class="chip">S3</span><span class="chip">Lambda</span><span class="chip">EKS</span><span class="chip">ECR</span><span class="chip">CloudWatch</span><span class="chip">CloudTrail</span><span class="chip">WAF</span><span class="chip">KMS</span><span class="chip">GCP</span><span class="chip">Compute Engine</span><span class="chip">GKE</span><span class="chip">Cloud Run</span><span class="chip">Cloud Functions</span><span class="chip">Cloud Storage</span><span class="chip">Cloud SQL</span><span class="chip">Pub/Sub</span><span class="chip">Azure</span><span class="chip">Virtual Machines</span><span class="chip">Azure AD</span><span class="chip">Storage Accounts</span></span></div>
+              <div class="sf-row"><span class="sf-lab">Containers &amp; DevOps</span><span class="chips"><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Helm</span><span class="chip">GitHub Actions</span><span class="chip">GitLab CI/CD</span><span class="chip">Jenkins</span><span class="chip">Terraform</span><span class="chip">CloudFormation</span><span class="chip">Ansible</span></span></div>
+              <div class="sf-row"><span class="sf-lab">Security &amp; Networking</span><span class="chips"><span class="chip">IAM</span><span class="chip">Security Groups</span><span class="chip">Least Privilege</span><span class="chip">Encryption</span><span class="chip">KMS</span><span class="chip">WAF</span><span class="chip">CloudTrail</span><span class="chip">VPC</span><span class="chip">Load Balancing</span><span class="chip">Checkov</span><span class="chip">ScoutSuite</span></span></div>
+              <div class="sf-row"><span class="sf-lab">Software &amp; Tools</span><span class="chips"><span class="chip">OpenTelemetry</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">ELK Stack</span><span class="chip">Kafka</span><span class="chip">Git</span><span class="chip">Linux</span><span class="chip">VMware</span><span class="chip">VS Code</span><span class="chip">Databricks</span></span></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · CONTACT -->
+    <section class="tile" id="t-contact" aria-label="Contact">
+      <div class="t-in">
+        <button class="t-head" aria-expanded="false" aria-controls="t-contact">
+          <span class="t-num">06</span><span class="t-title">Contact</span>
+          <span class="t-aff" aria-hidden="true"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M5 .5v9M.5 5h9" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span>
+        </button>
+        <div class="t-zone">
+          <div class="t-preview">
+            <div class="pub-prev">
+              <div class="pub-l">
+                <div class="pub-t">Let&rsquo;s build something scalable, secure, and reliable.</div>
+                <div class="pub-a">Open to software, cloud, and platform engineering roles · Graduating May 2026</div>
+              </div>
+              <div class="pub-m"><b>tanvik14@terpmail.umd.edu</b><br>(240) 462-9363<br>College Park, MD</div>
+            </div>
+          </div>
+          <div class="t-full">
+            <div class="fw">
+            <div class="pubf">
+              <div class="pubf-t">Let&rsquo;s build something scalable, secure, and reliable.</div>
+              <p class="pubf-a">I hold a <strong>Master of Engineering in Cloud Engineering</strong> and am currently seeking opportunities in <strong>Software Engineering, Cloud Infrastructure, and Platform Engineering</strong>. My interests also extend to <strong>Agentic AI</strong>, particularly building reliable systems that connect AI agents with tools, APIs, data, and scalable cloud platforms.</p>
+              <div class="cl">
+                <a href="mailto:tanvik14@terpmail.umd.edu"><span class="k">Email</span><span class="v">tanvik14@terpmail.umd.edu</span><svg class="ic" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                <a href="tel:+12404629363"><span class="k">Phone</span><span class="v">(240) 462-9363</span><svg class="ic" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                <a href="https://tanvi-kanchan.github.io" target="_blank" rel="noopener"><span class="k">Website</span><span class="v">tanvi-kanchan.github.io</span><svg class="ic" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                <a href="https://www.linkedin.com/in/tanvi-uday-kanchan/" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">linkedin.com/in/tanvi-uday-kanchan</span><svg class="ic" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                <a href="https://github.com/tanvi-kanchan" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">github.com/tanvi-kanchan</span><svg class="ic" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                <a href="https://drive.google.com/file/d/1AjpJnCDz9FQXJ9yCjE-beEOThccqr6p4/view?usp=sharing" target="_blank" rel="noopener"><span class="k">Resume</span><span class="v">drive.google.com</span><svg class="ic" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <footer>
-    <p class="footer-bar">⬢ tanvi.eng // 2026</p>
-    <p>
-      <a href="mailto:tanvik14@umd.edu">tanvik14@umd.edu</a> ·
-      <a href="https://github.com/tanvi-kanchan" target="_blank">GitHub</a>
-    </p>
+    <div class="f-brand">tanvi.eng <span class="sl">//</span> 2026</div>
+    <div class="f-right">
+      <div class="f-hint" id="hint"><span class="h-d">Select a panel to expand · Esc closes</span><span class="h-m">Tap a card to expand</span></div>
+      <button class="mode-btn" id="modeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="ic-moon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="ic-sun" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
   </footer>
+</div>
 
+<script>
+(() => {
+  'use strict';
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* hash flags: #still (freeze all motion) · #open=<id> (deep-link a section) */
+  const hash = {};
+  location.hash.slice(1).split('&').forEach(p => {
+    if (!p) return;
+    const i = p.indexOf('=');
+    if (i < 0) hash[p] = true; else hash[p.slice(0, i)] = p.slice(i + 1);
+  });
+  const STILL = !!hash.still;
+  if (STILL) document.documentElement.classList.add('still');
+
+  const board = document.getElementById('board');
+  const order = ['profile', 'experience', 'projects', 'education', 'stack', 'contact'];
+  const tiles = {}, heads = {};
+  order.forEach(id => {
+    tiles[id] = document.getElementById('t-' + id);
+    heads[id] = tiles[id].querySelector('.t-head');
+  });
+  let active = null;
+  let mobile = matchMedia('(max-width: 720px)').matches;
+
+  /* ---------- layout engine (deterministic rects; FLIP via CSS transitions) ---------- */
+  function hubRects(W, H, g) {
+    if (mobile) {
+      const idH = Math.round(Math.min(296, Math.max(224, H * 0.33)));
+      const rem = H - idH - 3 * g;
+      const expH = Math.round(rem * 0.36);
+      const rowH = Math.round(rem * 0.36);
+      const botH = rem - expH - rowH;
+      const c = Math.round((W - g) / 2);
+      let y = idH + g;
+      const r = { profile: [0, 0, W, idH], experience: [0, y, W, expH] };
+      y += expH + g;
+      r.projects = [0, y, c, rowH];
+      r.stack = [c + g, y, W - c - g, rowH];
+      y += rowH + g;
+      r.education = [0, y, c, botH];
+      r.contact = [c + g, y, W - c - g, botH];
+      return r;
+    }
+    /* slim profile column · full-width experience row · compact contact */
+    const idW = Math.round(Math.min(440, Math.max(310, W * 0.24)));
+    const rx = idW + g, rw = W - rx;
+    const rowA = Math.round(H * 0.42), rowB = Math.round(H * 0.33);
+    const rowC = H - rowA - rowB - 2 * g;
+    const pjW = Math.round(rw * 0.56), eduW = pjW; /* equal column widths across rows */
+    return {
+      profile:     [0, 0, idW, H],
+      experience:  [rx, 0, rw, rowA],
+      projects:    [rx, rowA + g, pjW, rowB],
+      stack:       [rx + pjW + g, rowA + g, rw - pjW - g, rowB],
+      education:   [rx, rowA + rowB + 2 * g, eduW, rowC],
+      contact:     [rx + eduW + g, rowA + rowB + 2 * g, rw - eduW - g, rowC]
+    };
+  }
+  function expandedRects(W, H, g, act) {
+    if (mobile) { const r = hubRects(W, H, g); r[act] = [0, 0, W, H]; return r; }
+    const railW = Math.round(Math.min(332, Math.max(246, W * 0.215)));
+    const aw = W - railW - g;
+    const others = order.filter(id => id !== act);
+    const oh = (H - (others.length - 1) * g) / others.length;
+    const r = {}; r[act] = [0, 0, aw, H];
+    others.forEach((id, i) => {
+      const y = Math.round(i * (oh + g));
+      const h = (i === others.length - 1) ? H - y : Math.round(oh);
+      r[id] = [aw + g, y, railW, h];
+    });
+    return r;
+  }
+  function apply() {
+    const g = mobile ? 10 : 14, W = board.clientWidth, H = board.clientHeight;
+    const rects = active ? expandedRects(W, H, g, active) : hubRects(W, H, g);
+    order.forEach(id => {
+      const [x, y, w, h] = rects[id], s = tiles[id].style;
+      s.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
+      s.width = w + 'px';
+      s.height = h + 'px';
+    });
+  }
+  function instantly(fn) {
+    document.body.classList.add('no-anim');
+    fn();
+    void board.offsetHeight;
+    requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.remove('no-anim')));
+  }
+
+  /* ---------- expand / collapse / handover ---------- */
+  function setActive(id, instant) {
+    if (id === active) id = null;
+    const prev = active;
+    active = id;
+    order.forEach(t => {
+      const el = tiles[t];
+      el.classList.toggle('is-active', t === active);
+      el.classList.toggle('is-rail', !!active && t !== active);
+      heads[t].setAttribute('aria-expanded', t === active ? 'true' : 'false');
+    });
+    document.body.classList.toggle('has-active', !!active);
+    if (prev) {
+      const p = tiles[prev];
+      p.classList.add('was-top');
+      setTimeout(() => p.classList.remove('was-top'), 640);
+    }
+    if (active) {
+      const f = tiles[active].querySelector('.t-full');
+      if (f) f.scrollTop = 0;
+      const hint = document.getElementById('hint');
+      if (hint) hint.classList.add('off');
+    }
+    if (instant) instantly(apply); else apply();
+  }
+
+  order.forEach(id => {
+    tiles[id].addEventListener('click', e => {
+      if (e.target.closest('a')) return;                    /* links act as links */
+      if (tiles[id].classList.contains('is-active')) {
+        if (e.target.closest('.t-head')) setActive(null);   /* header / × closes */
+        return;
+      }
+      setActive(id);                                        /* hub or rail: open / hand over */
+    });
+  });
+  document.addEventListener('click', e => { if (active && !e.target.closest('.tile')) setActive(null); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && active) setActive(null); });
+
+  addEventListener('resize', () => {
+    mobile = matchMedia('(max-width: 720px)').matches;
+    document.body.classList.toggle('m', mobile);
+    instantly(apply);
+  });
+
+  /* ---------- projects preview: calm index cycle (rAF, delta-time) ---------- */
+  const rows = Array.prototype.slice.call(document.querySelectorAll('.p-row'));
+  let ci = 0;
+  if (rows.length) rows[0].classList.add('on');
+  if (!RM && !STILL && rows.length) {
+    const tp = tiles.projects;
+    let last = performance.now(), acc = 0;
+    const PERIOD = 3400;
+    const step = t => {
+      requestAnimationFrame(step);
+      const dt = Math.min(120, t - last);
+      last = t;
+      if (document.hidden) return;                                   /* paused when hidden */
+      if (tp.classList.contains('is-rail') || tp.classList.contains('is-active')) return;
+      acc += dt;
+      if (acc >= PERIOD) {
+        acc = 0;
+        ci = (ci + 1) % rows.length;
+        rows.forEach((r, i) => r.classList.toggle('on', i === ci));
+      }
+    };
+    requestAnimationFrame(step);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) last = performance.now(); });
+  }
+
+  /* ---------- dark mode toggle (persisted per page) ---------- */
+  const rootEl = document.documentElement;
+  const DEFAULT_MODE = rootEl.getAttribute('data-default-mode') || 'light';
+  const MODE_KEY = 'bento-mode:' + location.pathname;
+  let mode = null;
+  try { mode = localStorage.getItem(MODE_KEY); } catch (e) {}
+  if (mode !== 'light' && mode !== 'dark') mode = DEFAULT_MODE;
+  rootEl.setAttribute('data-mode', mode);
+  const modeBtn = document.getElementById('modeBtn');
+  if (modeBtn) modeBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    mode = (mode === 'dark') ? 'light' : 'dark';
+    rootEl.setAttribute('data-mode', mode);
+    try { localStorage.setItem(MODE_KEY, mode); } catch (e2) {}
+  });
+
+  /* ---------- init ---------- */
+  document.body.classList.toggle('m', mobile);
+  instantly(apply);
+  document.body.classList.add('init');
+  requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add('go')));
+  if (hash.open && tiles[hash.open]) setActive(hash.open, true);
+
+  /* screenshot / debug hook */
+  window.__open = (id, instant) => setActive(id, instant !== false);
+})();
+</script>
 </body>
 </html>
